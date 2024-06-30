@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Courses page </title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form name="details" onsubmit="create(event)">
+                <h1>Create Course</h1>
+                
+                <div>
+                        <input type="text" placeholder="course name" name="courseName" maxlength="15">
+                        <input type="number" placeholder="number of students" name="numOfStudentsl" max="20">
+                        <input type="number" placeholder="year" name="startYear" min="1900" max="2025">
+                        <button type="submit">create course</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                        <button class="hidden" id="login"></button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                        <button class="hidden" id="register">create course</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="create.js"></script>
+</body>
+</html>
